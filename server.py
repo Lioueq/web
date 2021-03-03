@@ -24,13 +24,20 @@ def img():
     return f'''<!doctype html>
                 <html lang="en">
                   <head>
-                    <h1>Привет, Марс!</h1>
+                    <title>Привет, Марс!</title>
+                    <link rel="stylesheet" type="text/css" href="{url_for('static', filename='css/style.css')}" />
                   </head>
                   <body>
+                    <h1>Привет, Марс!</h1>
                     <img src="static/img/MARS.png" alt="Фото Марса">
-                  <div>Жди нас, Марс!</div>
+                  <div>Вот она какая красивая планета.</div>
                   </body>
                 </html>'''
+
+
+@app.route('/promotion_image')
+def promotion_img():
+    pass
 
 
 if __name__ == '__main__':
