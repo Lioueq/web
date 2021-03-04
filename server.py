@@ -25,10 +25,9 @@ def img():
                 <html lang="en">
                   <head>
                     <title>Привет, Марс!</title>
-                    <link rel="stylesheet" type="text/css" href="{url_for('static', filename='css/style.css')}" />
                   </head>
                   <body>
-                    <h1>Привет, Марс!</h1>
+                    <h1>Жди нас, Марс!</h1>
                     <img src="static/img/MARS.png" alt="Фото Марса">
                   <div>Вот она какая красивая планета.</div>
                   </body>
