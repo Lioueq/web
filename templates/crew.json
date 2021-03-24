@@ -1,0 +1,34 @@
+{
+  "member": [
+    { "name": "Ридли",
+      "surname": "Скотт",
+      "image": "/static/img/ridley.jpg",
+      "profession": "Пилот, экзобиолог"
+    },
+    { "name": "Энди",
+      "surname": "Уир",
+      "image": "/static/img/andy.jpg",
+      "profession": "Врач, инженер"
+    },
+    { "name": "Марк",
+      "surname": "Уотни",
+      "image": "/static/img/mark.jpg",
+      "profession": "Терраформатор, физик"
+    },
+    { "name": "Венката",
+      "surname": "Капур",
+      "image": "/static/img/vincent.jpg",
+      "profession": "Климатолог, Астролог"
+    },
+    { "name": "Тедди",
+      "surname": "Сандерс",
+      "image": "/static/img/teddy.jpg",
+      "profession": "Строитель, гляциолог"
+    },
+    { "name": "Шон",
+      "surname": "Бин",
+      "image": "/static/img/sean.jpg",
+      "profession": "Киберинженер, пилот дронов"
+    }
+  ]
+}
