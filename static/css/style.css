@@ -6,3 +6,10 @@
 .main{
     color: gray;
 }
+
+li {
+    list-style-type: none;
+   }
+.m {
+    padding-left: 50px;
+}
