@@ -1,16 +1,29 @@
 from flask import Flask, render_template
 
+
 app = Flask(__name__)
+
+param = {
+    'title': 'Анкета',
+    'surname': 'Watny',
+    'name': 'Mark',
+    'education': 'выше среднего',
+    'profession': 'штурман марсохода',
+    'sex': 'male',
+    'motivation': 'Всегда мечтал застрять на Марсе!',
+    'ready': 'True'
+}
 
 
 @app.route('/')
-@app.route('/list_prof/<list>')
-def index(list):
-    list_profs = ['инженер-исследователь', 'пилот', 'строитель', 'экзобиолог', 'врач', 'инженер по терраформированию',
-                  'климатолог', 'специалист по радиационной защите', 'астрогеолог', 'гляциолог',
-                  'инженер жизнеобеспечения', 'метеоролог', 'оператор марсохода', 'киберинженер', 'штурман',
-                  'пилот дронов']
-    return render_template('index.html', mode=list, list_profs=list_profs)
+@app.route('/answer')
+def answer():
+    return render_template('auto_answer.html', **param)
+
+
+@app.route('/auto_answer')
+def auto_answer():
+    return render_template('auto_answer.html', **param)
 
 
 if __name__ == '__main__':
