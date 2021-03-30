@@ -24,7 +24,7 @@
     </p>
         <p>
         {{ form.captain_id.label }}<br>
-        {{ form.captain_id(class="form-control", type="password") }}<br>
+        {{ form.captain_id(class="form-control") }}<br>
         {% for error in form.captain_id.errors %}
     <div class="alert alert-danger" role="alert">
         {{ error }}
